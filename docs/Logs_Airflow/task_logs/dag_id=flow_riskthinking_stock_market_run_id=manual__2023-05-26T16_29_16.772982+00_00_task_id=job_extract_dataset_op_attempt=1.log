@@ -1,0 +1,27 @@
+LAPTOP-SL60EDSS.localdomain
+*** Reading local file: /home/komatsu/airflow/logs/dag_id=flow_riskthinking_stock_market/run_id=manual__2023-05-26T16:29:16.772982+00:00/task_id=job_extract_dataset_op/attempt=1.log
+[2023-05-26 12:29:32,285] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: flow_riskthinking_stock_market.job_extract_dataset_op manual__2023-05-26T16:29:16.772982+00:00 [queued]>
+[2023-05-26 12:29:32,290] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: flow_riskthinking_stock_market.job_extract_dataset_op manual__2023-05-26T16:29:16.772982+00:00 [queued]>
+[2023-05-26 12:29:32,290] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-26 12:29:32,290] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2023-05-26 12:29:32,290] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-26 12:29:32,606] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): job_extract_dataset_op> on 2023-05-26 16:29:16.772982+00:00
+[2023-05-26 12:29:32,612] {standard_task_runner.py:52} INFO - Started process 8641 to run task
+[2023-05-26 12:29:32,616] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'flow_riskthinking_stock_market', 'job_extract_dataset_op', 'manual__2023-05-26T16:29:16.772982+00:00', '--job-id', '1168', '--raw', '--subdir', 'DAGS_FOLDER/riskthinking/flows/flow_riskthinking_stock_market.py', '--cfg-path', '/tmp/tmpe8x828kh', '--error-file', '/tmp/tmpecexud5o']
+[2023-05-26 12:29:32,617] {standard_task_runner.py:80} INFO - Job 1168: Subtask job_extract_dataset_op
+[2023-05-26 12:29:34,156] {task_command.py:370} INFO - Running <TaskInstance: flow_riskthinking_stock_market.job_extract_dataset_op manual__2023-05-26T16:29:16.772982+00:00 [running]> on host LAPTOP-SL60EDSS.localdomain
+[2023-05-26 12:29:35,045] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Pedro Duque
+AIRFLOW_CTX_DAG_ID=flow_riskthinking_stock_market
+AIRFLOW_CTX_TASK_ID=job_extract_dataset_op
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-26T16:29:16.772982+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-26T16:29:16.772982+00:00
+[2023-05-26 12:31:29,500] {logging_mixin.py:115} INFO - {'path': 'data/landing/stock_market', 'list_dir': ['etfs', 'stocks', 'symbols_valid_meta.csv']}
+[2023-05-26 12:31:29,500] {python.py:173} INFO - Done. Returned value was: {'path': 'data/landing/stock_market', 'list_dir': ['etfs', 'stocks', 'symbols_valid_meta.csv']}
+[2023-05-26 12:31:30,196] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=flow_riskthinking_stock_market, task_id=job_extract_dataset_op, execution_date=20230526T162916, start_date=20230526T162932, end_date=20230526T163130
+[2023-05-26 12:31:31,821] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-05-26 12:31:32,428] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+
